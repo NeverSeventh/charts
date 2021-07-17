@@ -1,0 +1,17 @@
+.names {
+  display: flex;
+  &__name {
+    width: 210px;
+    display: inline-block;
+    margin-left: 20px;
+
+    @media screen and (max-width: 829px) {
+      max-width: 210px;
+    }
+  }
+}
+
+.save__button {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
