@@ -38,6 +38,6 @@ app.get('/',(req,res)=>{
     res.send('<p>Hello world</p>')
 })
 
-app.listen(6970,()=>{
+app.listen(process.env.PORT || 6970,()=>{
     console.log('Server Started');
 });
