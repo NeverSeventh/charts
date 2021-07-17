@@ -23,7 +23,7 @@ const fetchSave = (data) => async(dispatch,getState) => {
     
     data = data.filter(el=> el.id &&el.dateReg&&el.dateLast);
     if (data.length === 0) return;
-    const responce = await fetch('http://localhost:6970/users/save',{
+    const responce = await fetch('https://chartsserver.herokuapp.com/users/save',{
         method:'POST',
         headers:{'Content-type':'application/json;chatset=utf-8'},
         body:JSON.stringify({data})
@@ -35,7 +35,7 @@ const fetchSave = (data) => async(dispatch,getState) => {
 
 const fetchUsers = () => async(dispatch,getState)=> {
     dispatch(showStatsActionCreator(false))
-    const responce = await fetch('http://localhost:6970/users/receive');
+    const responce = await fetch('https://chartsserver.herokuapp.com/users/receive');
 
     if (responce.status ===200) {
         const data = await responce.json();
