@@ -23,8 +23,8 @@ app.use(logger('dev'));
 
 
 app.use('/',(req, res, next)  => {
-    res.header("Access-Control-Allow-Origin", "https://chartsclient.herokuapp.com/");
-    res.header("Access-Control-Allow-Headers", "https://chartsclient.herokuapp.com/");
+    res.header("Access-Control-Allow-Origin", "https://chartsclient.herokuapp.com");
+    res.header("Access-Control-Allow-Headers", "https://chartsclient.herokuapp.com");
     res.header("Access-Control-Allow-Credentials", "true");
     next();
 });
