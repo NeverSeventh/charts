@@ -1,6 +1,3 @@
-
-import HistogramChart from 'react-chart-histogram';
-import { useSelector } from 'react-redux';
 import { lifeDuration } from '../../../functions/calculate';
 import HighchartsReact from 'highcharts-react-official';
 import Highcharts from 'highcharts';
